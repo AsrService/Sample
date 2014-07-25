@@ -1,11 +1,7 @@
 package com.sample.contr;
 
-import java.text.DateFormat;
-import java.util.Date;
 import java.util.Locale;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,9 +15,15 @@ public class HomeController {
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
+
+
+		System.out.println(10);
+		System.out.println(11);
+
 		System.out.println(1);
 		System.out.println(2);
 		System.out.println(3);
+
 		return "home";
 	}
 	
